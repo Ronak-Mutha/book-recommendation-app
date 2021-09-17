@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap");
+
+.App {
+  font-family: "Poppins", sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+body {
+  background-color: #fcd2d1;
+  color: #8675a9;
+}
+
+button {
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 2px solid;
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+  text-transform: capitalize;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+ul {
+  width: 80%;
+  margin-block-start: auto;
+}
+
+li {
+  display: grid;
+  grid-template:
+    [row1-start] "name rating" 1fr [row1-end]
+    [row2-start] "author author" 50% [row2-end]
+    / 3fr 1fr;
+  list-style: none;
+  justify-content: center;
+  place-items: start;
+  border: 1px solid;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 20px;
+}
+
+.name {
+  grid-area: name;
+  font-weight: bold;
+}
+
+.author {
+  grid-area: author;
+}
+
+.rating {
+  grid-area: rating;
+  justify-self: end;
+}
+
+@media only screen and (max-width: 320px) {
+  ul {
+    width: 80vw;
+  }
+
+  li {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .App {
+    padding: 0.3rem;
+  }
+}
