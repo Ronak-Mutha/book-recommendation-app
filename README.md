@@ -1,2 +1,3 @@
 # book-recommendation-app
-Created with CodeSandbox
+
+Book recommendation app which recommends books for programming languages. This app was created using React.
