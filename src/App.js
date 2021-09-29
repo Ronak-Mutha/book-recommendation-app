@@ -14,6 +14,11 @@ const booksDB = {
       name: "You Don't Know JS",
       author: "Kyle Simpson",
       rating: "4/5"
+    },
+    {
+      name: "A Smarter Way to Learn JavaScript",
+      author: "Mark Myers",
+      rating: "3.5/5"
     }
   ],
   python: [
@@ -27,6 +32,12 @@ const booksDB = {
       name: "Learn Python the Hard Way",
       author: "Zed Shaw",
       rating: "3.5/5"
+    },
+    {
+      name:
+        "Automate the Boring Stuff with Python: Practical Programming for Total Beginners",
+      author: "Al Sweigart",
+      rating: "4/5"
     }
   ],
   react: [
@@ -40,6 +51,12 @@ const booksDB = {
       name: "React Explained: Your Step-by-Step Guide to React",
       author: "Zac Gordon",
       rating: "4.5/5"
+    },
+    {
+      name:
+        "React Cookbook: Create Dynamic Web Apps with React Using Redux, Webpack, Node.js, and GraphQL",
+      author: "Carlos Santana Roldán",
+      rating: "4/5"
     }
   ]
 };
