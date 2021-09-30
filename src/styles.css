@@ -28,9 +28,6 @@ button {
 ul {
   padding-left: 0;
   margin: 0;
-}
-
-ul {
   width: 80%;
   margin-block-start: auto;
 }
@@ -38,8 +35,9 @@ ul {
 li {
   display: grid;
   grid-template:
-    [row1-start] "name rating" 1fr [row1-end]
-    [row2-start] "author author" 50% [row2-end]
+    [row1-start] "name rating" 2fr [row1-end]
+    [row2-start] "author author" 1fr [row2-end]
+    [row3-start] "description description" 3fr [row3-end]
     / 3fr 1fr;
   list-style: none;
   justify-content: center;
@@ -57,6 +55,12 @@ li {
 
 .author {
   grid-area: author;
+  align-self: center;
+}
+
+.description {
+  grid-area: description;
+  align-self: center;
 }
 
 .rating {
